@@ -20,9 +20,7 @@
             <div class="img">
                 <img src="/<?= WEBROOT2 ?>/webroot/img/photo.jpg" alt="Picture">
             </div>
-            <a href="/<?= WEBROOT2 ?>/">
-                <h3>DELTOUR Benjamin</h3>
-            </a>
+            <a href="/<?= WEBROOT2 ?>/" class="btn-shine">DELTOUR Benjamin</a>
         </div>
         <div id="links">
             <button class="mobile-nav-toggle" aria-controls="nav_links" aria-expanded="false">

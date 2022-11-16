@@ -65,25 +65,25 @@ window.onload = () =>{
         }
     } 
 
-    let imgs_slider2 = document.getElementsByClassName('img_slider2');
-    let etape2 = 0;
-    let nb_img2 = imgs_slider2.length;
+    // let imgs_slider2 = document.getElementsByClassName('img_slider2');
+    // let etape2 = 0;
+    // let nb_img2 = imgs_slider2.length;
 
 
-    setInterval(function(){
-        etape2 ++;
-        if(etape2 >= nb_img2){
-            etape2 = 0;
-        }
-        enleverActiveImg2();
-        imgs_slider2[etape2].classList.add('active');
-    }, 3000);
+    // setInterval(function(){
+    //     etape2 ++;
+    //     if(etape2 >= nb_img2){
+    //         etape2 = 0;
+    //     }
+    //     enleverActiveImg2();
+    //     imgs_slider2[etape2].classList.add('active');
+    // }, 3000);
 
-    function enleverActiveImg2(){
-        for(let y = 0; y < nb_img2; y++){
-            imgs_slider2[y].classList.remove('active');
-        }
-    } 
+    // function enleverActiveImg2(){
+    //     for(let y = 0; y < nb_img2; y++){
+    //         imgs_slider2[y].classList.remove('active');
+    //     }
+    // } 
 
     let imgs_slider3 = document.getElementsByClassName('img_slider3');
     let etape3 = 0;
