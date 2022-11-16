@@ -1,5 +1,7 @@
 <?php
 
+use function PHPSTORM_META\map;
+
 class accueil extends controller
 {
     function index()

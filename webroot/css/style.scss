@@ -3,16 +3,15 @@ $color_2: gray;
 $color_3: rgb(168, 168, 168);
 $color_4: white;
 $color_5: #03e9f4;
-$color_6: #03e9f4;
+$color_6: black;
 $font-family_1: 'Roboto', sans-serif;
 $background-color_1: rgb(32, 32, 32);
-$background-color_2: rgb(196, 196, 196);
-$background-color_3: transparent;
-$background-color_4: rgba(0, 173, 0, 0.5);
-$background-color_5: rgba(200, 0, 0, 0.5);
-$background-color_6: rgba(0, 0, 0, 0.75);
-$background-color_7: rgb(109, 109, 109);
-$background-color_8: rgb(54, 54, 54);
+$background-color_2: transparent;
+$background-color_3: rgba(0, 173, 0, 0.5);
+$background-color_4: rgba(200, 0, 0, 0.5);
+$background-color_5: rgba(0, 0, 0, 0.75);
+$background-color_6: rgb(109, 109, 109);
+$background-color_7: rgb(54, 54, 54);
 
 @import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap";
 @keyframes responce {
@@ -43,6 +42,15 @@ body {
     background-color: rgb(32, 32, 32);
     color: rgb(196, 196, 196);
 }
+
+svg{
+    fill: white;
+}
+
+p{
+    text-align: justify;
+}
+
 header {
 	position: sticky;
 	display: flex;
@@ -61,16 +69,16 @@ header {
                 background-position: 0;
             }
             60% {
-                background-position: 310px;
+                background-position: 315px;
             }
             100% {
-                background-position: 310px;
+                background-position: 315px;
             }
         }
         .btn-shine {
             padding: 12px 48px;
-            color: $color_6;
-            background: linear-gradient(to right, rgb(168, 168, 168) 0, #03e9f4 10%, rgb(168, 168, 168) 20%);
+            color: $color_5;
+            background: linear-gradient(to right, rgb(168, 168, 168) 0, $color_5 10%, rgb(168, 168, 168) 20%);
             background-position: 0;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -99,6 +107,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+        margin-right: 20px;
 		.nav_links {
 			display: flex;
 			justify-content: center;
@@ -125,7 +134,7 @@ header {
 				left: 50%;
 				height: 1px;
 				width: 0;
-				background-color: $background-color_2;
+				background-color: $color_5;
 				transform: translate(-50%, -50%);
 				transition: width 0.3s;
 			}
@@ -149,7 +158,7 @@ header {
 	width: 25vw;
 	height: 3rem;
 	padding: 3vh;
-	background-color: $background-color_4;
+	background-color: $background-color_3;
 	text-align: center;
 	border-radius: 0 0 2rem 2rem;
 	animation-duration: 1s;
@@ -165,7 +174,7 @@ header {
 	}
 }
 .error {
-	background-color: $background-color_5;
+	background-color: $background-color_4;
 }
 .content {
 	margin: 2% auto;
@@ -310,10 +319,9 @@ header {
         }
         button {
             &:hover {
-                background: #03e9f4;
-                color: $color_1;
-                border-radius: 5px;
-                box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+                background: $color_5;
+                color: grey ;
+                box-shadow: 0 0 5px $color_5, 0 0 25px $color_5, 0 0 50px $color_5, 0 0 100px $color_5;
             }
             span {
                 position: absolute;
@@ -323,7 +331,7 @@ header {
                     left: -100%;
                     width: 100%;
                     height: 2px;
-                    background: linear-gradient(90deg, transparent, #03e9f4);
+                    background: linear-gradient(90deg, transparent, $color_5);
                     animation: btn-anim1 1s linear infinite;
                 }
                 &:nth-child(2) {
@@ -331,7 +339,7 @@ header {
                     right: 0;
                     width: 2px;
                     height: 100%;
-                    background: linear-gradient(180deg, transparent, #03e9f4);
+                    background: linear-gradient(180deg, transparent, $color_5);
                     animation: btn-anim2 1s linear infinite;
                     animation-delay: .25s;
                 }
@@ -340,7 +348,7 @@ header {
                     right: -100%;
                     width: 100%;
                     height: 2px;
-                    background: linear-gradient(270deg, transparent, #03e9f4);
+                    background: linear-gradient(270deg, transparent, $color_5);
                     animation: btn-anim3 1s linear infinite;
                     animation-delay: .5s;
                 }
@@ -349,7 +357,7 @@ header {
                     left: 0;
                     width: 2px;
                     height: 100%;
-                    background: linear-gradient(360deg, transparent, #03e9f4);
+                    background: linear-gradient(360deg, transparent, $color_5);
                     animation: btn-anim4 1s linear infinite;
                     animation-delay: .75s;
                 }
@@ -361,7 +369,7 @@ header {
 	.modal {
         position: relative;
 		display: flex;
-		background-color: $background-color_6;
+		background-color: $background-color_5;
 		position: fixed;
 		top: 0;
 		bottom: 0;
@@ -372,7 +380,7 @@ header {
 		opacity: 0;
 		transition: 0.3s;
 		.modal-content {
-			background-color: $background-color_3;
+			background-color: $background-color_2;
 			max-width: 400px;
 			margin: auto;
 			flex: 1;
@@ -447,7 +455,7 @@ header {
 				padding: 7px;
                 border: none;
 				border-radius: 5px;
-				background-color: $background-color_7;
+				background-color: $background-color_6;
 				font-size: 1.2em;
 				color: $color_4;
 				text-decoration: none;
@@ -478,29 +486,49 @@ header {
 			justify-content: space-around;
 			align-items: center;
 			margin: 20px;
-			.content_competence {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-around;
-				align-items: center;
-				margin: 10px;
-				padding: 20px;
-				width: 33em;
-				height: 18em;
-				background-color: $background-color_8;
-				border-radius: 20px;
-				box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-				transition: transform 0.5s;
-				&:hover {
-					transform: scale(1.07, 1.07);
-				}
-				img {
-					width: 20%;
-				}
-				h2 {
-					color: $color_4;
-				}
-			}
+            gap: 50px 50px; 
+
+            .card {
+                .face {
+                    width: 300px;
+                    height: 200px;
+                    transition: .4s;
+                }
+                .face.face1 {
+                    background: #333;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    z-index: 1;
+                    width: 400px;
+                    height: 300px;
+                    .content {
+                        opacity: .7;
+                        transition: 0.5s;
+                        text-align: center;
+                        width: 25%;
+                        i {
+                            font-size: 3em;
+                            color: $color_4;
+                            display: inline-block;
+                        }
+                        h3 {
+                            font-size: 1em;
+                            color: $color_4;
+                            text-align: center;
+                        }
+                    }
+                }
+                &:hover {
+                    .face.face1 {
+                        box-shadow: inset 0 0 60px $color_5, inset 20px 0 80px $color_5, inset -20px 0 80px $color_5, inset 20px 0 300px $color_5, inset -20px 0 300px $color_5, 0 0 50px #fff, -10px 0 80px $color_5, 10px 0 80px $color_5;
+                        .content {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
 		}
 	}
 	.projects {
@@ -520,7 +548,7 @@ header {
 			text-align: center;
 			transition: box-shadow 0.7s;
 			&:hover {
-				box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+				box-shadow: $color_5 0px 54px 55px, $color_5 0px -12px 30px, $color_5 0px 4px 6px, $color_5 0px 12px 13px, $color_5 0px -3px 5px;
 			}
 			.slider {
 				position: relative;
@@ -560,7 +588,7 @@ header {
 footer {
 	margin-top: 20px;
 	padding: 10px;
-	background-color: $background-color_8;
+	background-color: $background-color_7;
 	.footer {
 		display: flex;
 		justify-content: space-around;
@@ -599,6 +627,11 @@ footer {
 	}
 }
 @media (max-width: 700px) {
+    
+    p{
+        text-align: left;
+    }
+
 	header {
 		flex-direction: column;
 		#links {
@@ -612,7 +645,7 @@ footer {
 			}
 			.mobile-nav-toggle {
 				display: block;
-				background-color: $background-color_3;
+				background-color: $background-color_2;
 				background-image: url('/portfolio/webroot/img/hamburger-icon.svg');
 				background-repeat: no-repeat;
 				width: 5rem;
