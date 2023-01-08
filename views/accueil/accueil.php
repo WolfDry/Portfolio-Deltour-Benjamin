@@ -24,56 +24,60 @@ if (isset($responce)) {
 ?>
 
 <section class="content">
-    <h1>Alternant en développement informatique</h1>
-    <p>
-        Durant mes années de collège/lycée je souhaitais intégrer dans la police scientifique et plus précisement la branche informatique. Je me suis donc orienté en BTS Services Informatiques aux Organisations qui propose des cours de cybersécurité. Toutefois ce BTS m’a également fait découvrir le développement informatique et notamment le développement web qui m'a énormement plu. Je suis actuellement en 3ème année de Bachelor développement web dans l'école MyDigitalSchool de Lyon.
-    </p>
-    <a href="" role="button" data-target="#modal" data-toggle="modal">Contactez moi</a>
+    <div id="desc">
+        <h1>Alternant en développement informatique</h1>
+        <p>
+            Durant mes années de collège/lycée je souhaitais intégrer dans la police scientifique et plus précisement la branche informatique. Je me suis donc orienté en BTS Services Informatiques aux Organisations qui propose des cours de cybersécurité. Toutefois ce BTS m’a également fait découvrir le développement informatique et notamment le développement web qui m'a énormement plu. Je suis actuellement en 3ème année de Bachelor développement web dans l'école MyDigitalSchool de Lyon.
+        </p>
+        <a href="" role="button" data-target="#modal" data-toggle="modal">Contactez moi</a>
 
-    <div class="modal" id="modal" role="dialog">
-        <div class="modal-content">
-            <div class="modal-close" data-dismiss="dialog">
-                <i class="las la-times"></i>
-            </div>
-            <div class="form-container" id="contact">
-                <div class="login-box">
-                    <h2>Contact</h2>
-                    <form action="#" method="POST">
-                        <div class="form-data">
-                            <div class="user-box">
-                                <input type="text" name="name" required="">
-                                <label>Nom</label>
+        <div class="modal" id="modal" role="dialog">
+            <div class="modal-content">
+                <div class="modal-close" data-dismiss="dialog">
+                    <i class="las la-times"></i>
+                </div>
+                <div class="form-container" id="contact">
+                    <div class="login-box">
+                        <h2>Contact</h2>
+                        <form action="#" method="POST" id="form">
+                            <div class="form-data">
+                                <div class="user-box">
+                                    <input type="text" name="name" required="">
+                                    <label>Nom</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="text" name="surname" required="">
+                                    <label>Prénom</label>
+                                </div>
                             </div>
                             <div class="user-box">
-                                <input type="password" name="surname" required="">
-                                <label>Prénom</label>
+                                <input type="mail" name="mail" required="">
+                                <label>E-mail</label>
                             </div>
-                        </div>
-                        <div class="user-box">
-                            <input type="mail" name="mail" required="">
-                            <label>E-mail</label>
-                        </div>
-                        <div class="user-box">
-                            <textarea name="message" required=""></textarea>
-                            <label>Entrez votre message</label>
-                        </div>
-                        <input type="hidden" name="post" value="true">
-                        <button type="submit">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Envoyer
-                        </button>
-                    </form>
+                            <div class="user-box">
+                                <textarea name="message" required=""></textarea>
+                                <label>Entrez votre message</label>
+                            </div>
+                            <input type="hidden" name="post" value="true">
+                            <button type="submit">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <h2 id="competences">Mes compétences :</h2>
-    <section class="competences">
+    <section class="sect-competences">
+        <div class="logo" id="competences">
+            <h2>Mes <span>comp</span>éten<span>c</span>es</h2>
+        </div>
         <h3>Languages :</h3>
-        <div class="competence">
+        <div class="competences">
             <div class="card">
                 <div class="face face1">
                     <div class="content">
@@ -156,7 +160,7 @@ if (isset($responce)) {
             </div>
         </div>
         <h3>Framework</h3>
-        <div class="competence">
+        <div class="competences">
             <div class="card">
                 <div class="face face1">
                     <div class="content">
@@ -177,39 +181,47 @@ if (isset($responce)) {
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.526 7.24c0.010 0.042 0.016 0.089 0.016 0.13v6.87c0 0.177-0.094 0.344-0.25 0.432l-5.766 3.323v6.578c0 0.177-0.094 0.344-0.25 0.432l-12.036 6.927c-0.026 0.016-0.057 0.026-0.089 0.036-0.010 0.005-0.021 0.010-0.031 0.016-0.083 0.021-0.172 0.021-0.255 0-0.016-0.005-0.026-0.010-0.036-0.016-0.031-0.010-0.057-0.021-0.083-0.036l-12.031-6.927c-0.156-0.089-0.255-0.255-0.255-0.432v-20.609c0-0.042 0.010-0.089 0.021-0.13 0.005-0.016 0.010-0.026 0.016-0.042 0.010-0.026 0.021-0.052 0.031-0.078 0.005-0.016 0.021-0.026 0.031-0.042 0.016-0.021 0.031-0.042 0.047-0.063 0.016-0.010 0.031-0.021 0.047-0.036 0.021-0.016 0.036-0.031 0.057-0.042l6.016-3.464c0.156-0.089 0.349-0.089 0.5 0l6.021 3.464c0.021 0.010 0.036 0.026 0.052 0.042 0.016 0.010 0.036 0.026 0.052 0.036 0.016 0.021 0.026 0.036 0.042 0.063 0.010 0.010 0.026 0.026 0.036 0.042 0.010 0.026 0.021 0.052 0.031 0.078 0.005 0.016 0.016 0.026 0.016 0.042 0.016 0.042 0.021 0.083 0.021 0.13v12.87l5.010-2.885v-6.578c0-0.047 0.010-0.089 0.021-0.13 0.005-0.016 0.010-0.031 0.016-0.042 0.010-0.026 0.021-0.052 0.031-0.078 0.010-0.021 0.026-0.031 0.036-0.047 0.016-0.021 0.026-0.042 0.042-0.057s0.036-0.026 0.052-0.036c0.016-0.016 0.031-0.031 0.052-0.042l6.021-3.464c0.151-0.094 0.344-0.094 0.5 0l6.016 3.464c0.021 0.010 0.036 0.026 0.057 0.042 0.016 0.010 0.031 0.021 0.047 0.036s0.031 0.036 0.047 0.057c0.010 0.016 0.026 0.026 0.031 0.047 0.016 0.026 0.021 0.052 0.031 0.078 0.010 0.010 0.016 0.026 0.021 0.042zM30.536 13.948v-5.708l-2.104 1.208-2.906 1.677v5.708zM24.526 24.281v-5.714l-2.865 1.63-8.167 4.667v5.766zM1.458 4.833v19.448l11.031 6.349v-5.766l-5.766-3.266c-0.021-0.010-0.036-0.026-0.052-0.042-0.016-0.010-0.036-0.021-0.047-0.036h-0.005c-0.016-0.016-0.026-0.036-0.042-0.052-0.010-0.016-0.026-0.031-0.036-0.052-0.010-0.016-0.021-0.042-0.026-0.063-0.010-0.021-0.021-0.036-0.026-0.057s-0.010-0.047-0.010-0.073c-0.005-0.021-0.010-0.036-0.010-0.057v-13.448l-2.906-1.677zM6.974 1.078l-5.010 2.885 5.010 2.885 5.010-2.885zM9.583 19.089l2.906-1.677v-12.578l-2.104 1.208-2.911 1.677v12.578zM25.026 4.484l-5.016 2.885 5.016 2.885 5.010-2.885zM24.526 11.125l-5.016-2.885v5.708l2.906 1.677 2.109 1.208zM12.99 23.995l11.026-6.292-5.005-2.885-11.021 6.344z" />
+                        </svg>
+                        <h3>Laravel</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <h2 id="projets">Projets réalisés :</h2>
-    <section class="projects">
-        <div class="project">
-            <h3>Le gite d'auzon</h3>
-            <p>juin 2021</p>
-            <div class="slider1 slider" data-slider="0">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/legitedauzon1.png" alt="legitedauzon" class="img_slider1 active" data-slider="0">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/legitedauzon2.png" alt="legitedauzon" class="img_slider1" data-slider="0">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/legitedauzon3.png" alt="legitedauzon" class="img_slider1" data-slider="0">
-            </div>
-            <p class="desc">Site internet du gite d'Auzon que j'ai réalisé durant mon stage de première année de BTS SIO. Les propriétaires souhaitaient un site plus actuel pour mettre en valeur leur location saisonnière.</p>
+    <section class="sect-projects">
+        <div class="logo">
+            <h2 id="projets">Pr<span>oje</span>ts réali<span>és</span> :</h2>
         </div>
-        <!--<div class="project">
-            <h3>Burn out Spirit</h3>
-            <p>janvier - fevrier 2022</p>
-            <div class="slider2 slider" data-slider="1">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/burnoutspirit1.png" alt="burnoutspirit" class="img_slider2 active" data-slider="1">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/burnoutspirit2.png" alt="burnoutspirit" class="img_slider2" data-slider="1">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/burnoutspirit3.png" alt="burnoutspirit" class="img_slider2" data-slider="1">
+        <div class="projects">
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                    <line class="top" x1="0" y1="0" x2="1100" y2="0" />
+                    <line class="left" x1="0" y1="560" x2="0" y2="-1000" />
+                    <line class="bottom" x1="400" y1="560" x2="-700" y2="560" />
+                    <line class="right" x1="400" y1="0" x2="400" y2="1560" />
+                </svg>
+                <h3>Le gite d'auzon</h3>
+                <span>juin 2021</span>
+                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/legitedauzon1.png" alt="legitedauzon" data-slider="0" width="90%">
+                <span>Site internet du gite d'Auzon que j'ai réalisé durant mon stage de première année de BTS SIO. Les propriétaires souhaitaient un site plus actuel pour mettre en valeur leur location saisonnière.</span>
             </div>
-            <p class="desc">Site internet de Burn Out Spirit que j'ai réalisé durant mon stage de deuxième année de BTS SIO. Le but de ce stage était de réaliser un site internet afin d'accompagner ma maitre de stage dans le lancement de sa micro-entreprise.</p>
-        </div>-->
-        <div class="project">
-            <h3>Portfolio</h3>
-            <p>mars 2022</p>
-            <div class="slider3 slider" data-slider="2">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/portfolio1.png" alt="Deltour Benjamin" class="img_slider3 active" data-slider="2">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/portfolio2.png" alt="Deltour Benjamin" class="img_slider3" data-slider="2">
-                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/portfolio3.png" alt="Deltour Benjamin" class="img_slider3" data-slider="2">
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                    <line class="top" x1="0" y1="0" x2="1100" y2="0" />
+                    <line class="left" x1="0" y1="560" x2="0" y2="-1000" />
+                    <line class="bottom" x1="400" y1="560" x2="-700" y2="560" />
+                    <line class="right" x1="400" y1="0" x2="400" y2="1560" />
+                </svg>
+                <h3>Portfolio</h3>
+                <span>juin 2022</span>
+                <img src="/<?= WEBROOT2 ?>/webroot/img/projets/portfolio1.png" alt="legitedauzon" width="90%">
+                <span>Site internet sur lequel vous êtes présentant mes compétences et mes projets.</span>
             </div>
-            <p class="desc">Site internet sur lequel vous êtes présentant mes compétences et mes projets.</p>
         </div>
     </section>
 </section>
