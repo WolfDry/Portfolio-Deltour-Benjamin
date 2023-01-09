@@ -39,12 +39,12 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-    background-color: rgb(32, 32, 32);
-    color: rgb(196, 196, 196);
+    background-color: $background-color_1;
+    color: $color_1;
 }
 
 svg{
-    fill: white;
+    fill: $color_4;
 }
 
 p{
@@ -78,11 +78,11 @@ header {
         .btn-shine {
             padding: 12px 48px;
             color: $color_5;
-            background: linear-gradient(to right, rgb(168, 168, 168) 0, $color_5 10%, rgb(168, 168, 168) 20%);
+            background: linear-gradient(to right, $color_3 0, $color_5 10%, $color_3 20%);
             background-position: 0;
 			background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: $background-color_2;
             animation: shine 3s infinite linear;
             animation-fill-mode: forwards;
             -webkit-text-size-adjust: none;
@@ -269,7 +269,7 @@ header {
 					border: none;
 					border-bottom: 1px solid #fff;
 					outline: none;
-					background: transparent;
+					background: $background-color_2;
 					&:focus {
 						~ {
 							label {
@@ -307,7 +307,7 @@ header {
 					position: relative;
 					display: inline-block;
 					padding: 10px 20px;
-					background-color: transparent;
+					background-color: $background-color_2;
 					border: none;
 					color: $color_5;
 					font-size: 16px;
@@ -333,7 +333,7 @@ header {
 						left: -100%;
 						width: 100%;
 						height: 2px;
-						background: linear-gradient(90deg, transparent, $color_5);
+						background: linear-gradient(90deg, $background-color_2, $color_5);
 						animation: btn-anim1 1s linear infinite;
 					}
 					&:nth-child(2) {
@@ -341,7 +341,7 @@ header {
 						right: 0;
 						width: 2px;
 						height: 100%;
-						background: linear-gradient(180deg, transparent, $color_5);
+						background: linear-gradient(180deg, $background-color_2, $color_5);
 						animation: btn-anim2 1s linear infinite;
 						animation-delay: .25s;
 					}
@@ -350,7 +350,7 @@ header {
 						right: -100%;
 						width: 100%;
 						height: 2px;
-						background: linear-gradient(270deg, transparent, $color_5);
+						background: linear-gradient(270deg, $background-color_2, $color_5);
 						animation: btn-anim3 1s linear infinite;
 						animation-delay: .5s;
 					}
@@ -359,7 +359,7 @@ header {
 						left: 0;
 						width: 2px;
 						height: 100%;
-						background: linear-gradient(360deg, transparent, $color_5);
+						background: linear-gradient(360deg, $background-color_2, $color_5);
 						animation: btn-anim4 1s linear infinite;
 						animation-delay: .75s;
 					}
@@ -647,8 +647,14 @@ footer {
 		align-items: center;
 		.txt {
 			p {
+				text-align: justify;
+				cursor: pointer;
 				a {
 					color: $color_4;
+					transition: all 0.2s;
+					&:hover{
+						color: $color_5;
+					}
 				}
 			}
 			h2 {
@@ -675,10 +681,14 @@ footer {
 		a {
 			color: $color_4;
 			text-decoration: none;
+			transition: all 0.2s;
+			&:hover{
+				color: $color_5;
+			}
 		}
 	}
 }
-@media (max-width: 700px) {
+@media (max-width: 1150px) {
     
     p{
         text-align: left;
@@ -686,6 +696,11 @@ footer {
 
 	header {
 		flex-direction: column;
+		#title{
+			.btn-shine{
+				padding: 0;
+			}
+		}
 		#links {
 			flex-direction: column;
 			margin: auto;
@@ -713,6 +728,9 @@ footer {
 		}
 	}
 	.content {
+		h2 {
+			font-size: 2.5em;
+		}
 		.modal {
 			.modal-content {
 				.modal-body {
@@ -731,8 +749,27 @@ footer {
 				}
 			}
 		}
-		h2 {
-			font-size: 2.5em;
+		.sect-competences{
+			.competences{
+				.card{
+					.face.face1{
+						width: 300px;
+						height: 200px;
+					}
+				}
+			}
+		}
+		.sect-projects{
+			.projects{
+				.box{
+					width: 300px;
+					height: 460px;
+					box-shadow: inset 0 0 0 5px #ffffff;
+					svg{
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }

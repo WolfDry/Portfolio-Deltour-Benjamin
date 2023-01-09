@@ -43,7 +43,8 @@
         <div class="footer">
             <div class="txt">
                 <h2>Contact :</h2>
-                <p><a href="mailto:benjamindeltour22@gmail.com"><i class="las la-envelope"></i>Benjamin Deltour</a></p>
+                <p><a href="mailto:benjamindeltour22@gmail.com"><i class="las la-envelope"></i> Benjamin Deltour</a></p>
+                <p><a href="https://www.linkedin.com/in/benjamin-deltour-42312020b/"><i class="lab la-linkedin-in"></i> Linkedin</a></p>
             </div>
             <div class="picture">
                 <img src="/<?= WEBROOT2 ?>/webroot/img/photo.jpg" alt="Picture">
