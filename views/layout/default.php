@@ -27,10 +27,11 @@
                 <span class="sr-only"></span>
             </button>
             <div class="nav_links" data-visible="false">
+                <a id="linkedin" href="https://github.com/WolfDry" target="new" aria-hidden="true"><i class="lab la-github"></i></a>
                 <a id="linkedin" href="https://www.linkedin.com/in/benjamin-deltour-42312020b/" target="new" aria-hidden="true"><i class="lab la-linkedin-in"></i></a>
                 <a href="#competences" aria-hidden="true">Mes compétences</a>
                 <a href="#projets" aria-hidden="true">Mes projets</a>
-                <a href="/<?= WEBROOT2 ?>/webroot/pdf/CV Deltour Benjamin.pdf" target="new" aria-hidden="true">Mon CV</a>
+                <a href="/<?= WEBROOT2 ?>/webroot/pdf/CV_Deltour_Benjamin.pdf" target="new" aria-hidden="true">Mon CV</a>
             </div>
         </div>
     </header>
